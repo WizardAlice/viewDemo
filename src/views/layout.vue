@@ -106,7 +106,7 @@
       </div>
     </div>
     <div class="content">
-      <router-view></router-view>
+        <router-view></router-view>
     </div>
     <div class="footer">
       <p>Copyright © 2008-2016 北京蓝海讯通科技股份有限公司 京ICP备14028342号 京公网安备 11010802016192号</p>
