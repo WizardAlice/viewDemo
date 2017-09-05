@@ -19,3 +19,24 @@ npm run dev
 npm run build
 ```
 
+在ruby on rails项目中使用vue单组件：
+gem 'vuejs-rails'
+gem 'rails-vue-loader'
+添加到安装依赖中，安装之后，创建并注册vueinit.js文件。并在最外层的html的body的最后引入。
+
+vueinit.js
+...................................................................
+//= require vue
+
+//= require vueComponent/book  //引入要使用的组件（xxx.vue）
+
+
+new Vue({
+  el: '#app',
+  components: {
+    'mybook': VComponents.book
+  }
+})
+....................................................................
+
+在需要使用的标签（id为app）下面，直接使用<mybook name="suibian" />即可
