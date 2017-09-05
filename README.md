@@ -30,7 +30,6 @@ vueinit.js
 
 //= require vueComponent/book  //引入要使用的组件（xxx.vue）
 
-
 new Vue({
   el: '#app',
   components: {
